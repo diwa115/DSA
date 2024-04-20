@@ -1,0 +1,28 @@
+TYPE 1 : WHEN WE HAHE TO FIND SOME ELEMENT FROM ARRAY OR 2 ARRAYS IN (nlogn) COMPLEXITY ->
+STEP 1: SORT 
+STEP 2: USE FOR LOOP AND WHILE LOOP INSIDE IT FOR PURPOSE OF BINARY SEARCH 
+
+EXAPMLES 
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+TYPE 2 : WHEN WE ARE CONFUSED TO INCREASE L OR H IN TWO POINTER OR BINARY SEARCH O(nlogn)
+AS, IF(A[H]-A[L]>N) HERE WE CAN DO L++ OR H-- BOTH 
+SO WRITE SIMILAR CODE TO THIS 
+
+ while(right<size){
+        int diff=arr[right]-arr[left];
+        if(diff==n){
+            return true;
+        }
+        else if(diff < n){
+            right++;
+        }
+        else{
+            left++;
+            if(left==right){
+                right++;
+            }
+        }
+    }
+    return false;
+}
+__________________________________________________________________________________________________________________________________________________________________________________________________________
